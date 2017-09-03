@@ -4,10 +4,18 @@
 # Question 1 (Naked Twins)
 Q: How do we use constraint propagation to solve the naked twins problem?  
 A: *Student should provide answer here*
+'Naked twins' is an additional solving strategy, which can reduce the number of 
+possible choices for puzzle boxes of a puzzle unit where naked twins appear. It is used in 
+combination with other contraints (elimination, only choice) repatedly to find
+a solution to a puzzle. This technique is called constraint propagation.
 
 # Question 2 (Diagonal Sudoku)
 Q: How do we use constraint propagation to solve the diagonal sudoku problem?  
 A: *Student should provide answer here*
+Rules for solving diagonal sudoku problem are identical to one for non-diagonal sudoku.
+Diagonals are just added to list of units (rows, columns, squares, diagonals). And same
+constraint  propagation strategies are applied to all units.
+
 
 ### Install
 

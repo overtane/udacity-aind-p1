@@ -49,7 +49,6 @@ def naked_twins(values):
             for t in p: 
                 if (t[1],t[0]) not in twins:
                     twins.append(t)
-    print(twins)        
 
     # Eliminate the naked twins as possibilities for their peers
     for t in twins:
@@ -211,11 +210,11 @@ if __name__ == '__main__':
     diag_sudoku_grid = '2.............62....1....7...6..8...3...9...7...6..4...4....8....52.............3'
     display(solve(diag_sudoku_grid))
 
-    #try:
-    #    from visualize import visualize_assignments
-    #    visualize_assignments(assignments)
+    try:
+        from visualize import visualize_assignments
+        visualize_assignments(assignments)
 
-    #except SystemExit:
-    #    pass
-    #except:
-    #    print('We could not visualize your board due to a pygame issue. Not a problem! It is not a requirement.')
+    except SystemExit:
+        pass
+    except:
+        print('We could not visualize your board due to a pygame issue. Not a problem! It is not a requirement.')
